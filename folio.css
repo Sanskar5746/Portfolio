@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.hero-content h1{
+    font-size: bolder;
+    font-family:'Times New Roman', Times, serif;
+
+}
+header .right{
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+.hero{
+    padding: 240px 150px;
+    text-align: center;
+}
+
+.about {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.portfolio {
+    padding: 50px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+.portfolio-item-1 img {
+    max-width: 30%;
+    border: 2px solid black;
+    border-radius: 5px;
+    float: left;
+}
+
+.portfolio-item-2 img{
+    float: right;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #e9e9e9;
+    padding: 50px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    right: 0;
+    min-width: 30%;
+    border-radius: 4px;
+    z-index: 1;
+    overflow: auto;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 13px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content li {
+    list-style-type: none;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .right:hover .dropdown-content {
+    display: inline;
+    text-decoration: none;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .right:hover .btn {
+    background-color: white;
+  }
+
+.contact span li{
+    text-decoration: none;
+    margin: 3px 4px;
+}
